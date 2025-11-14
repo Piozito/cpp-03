@@ -6,13 +6,13 @@
 #    By: aaleixo- <aaleixo-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/14 08:35:31 by aaleixo-          #+#    #+#              #
-#    Updated: 2025/11/14 15:08:07 by aaleixo-         ###   ########.fr        #
+#    Updated: 2025/11/14 15:33:36 by aaleixo-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap
+NAME = ScavTrap
 SOURCES = \
-	main.cpp ClapTrap.cpp
+	main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 CXX = c++
