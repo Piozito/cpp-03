@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaleixo- <aaleixo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 15:20:28 by aaleixo-          #+#    #+#             */
-/*   Updated: 2025/11/17 10:37:48 by aaleixo-         ###   ########.fr       */
+/*   Created: 2025/11/14 08:35:43 by aaleixo-          #+#    #+#             */
+/*   Updated: 2025/11/17 10:13:24 by aaleixo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-#define SCAVTRAP_H
-
 #include "ClapTrap.hpp"
-#include <iostream>
+#include "FragTrap.hpp"
 
-class ScavTrap : public ClapTrap
+int main()
 {
-	private:
+	FragTrap b("Fraggy");
 
-	public:
-		ScavTrap();
-		ScavTrap(std::string name);
-		ScavTrap(const ScavTrap &copy);
-		~ScavTrap();
-		ScavTrap& operator=(ScavTrap const& a);
-
-		void attack(const std::string& target);
-		void guardGate();
-
-};
-
-#endif
+	std::cout << "\n===== FragTrap tests =====\n" << std::endl;
+	b.attack("Clappy");
+	b.beRepaired(20);
+	b.takeDamage(10);
+	b.highFivesGuys();
+	std::cout << "\n==========================\n" << std::endl;
+	
+}
